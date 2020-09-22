@@ -1,14 +1,92 @@
 :root {
-    --yellow: #F7DF94;
+  --yellow: #f7df94;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-    font-family: Raleway, sans-serif;
-    font-weight: 400;
+.wraper header {
+  margin-top: 31px;
+  margin-right: 127px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wraper header #random {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.wraper #random:hover {
+  cursor: pointer;
+}
+
+.wraper header h1 {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.26px;
+  margin-right: 11px;
+  text-align: center;
+}
+
+.wraper main {
+  margin-top: 25px;
+}
+
+.wraper main .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 200px;
+  display: flex;
+}
+
+.wraper main #vertical-line {
+  width: 8px;
+  height: 301px;
+  border-left: thick solid var(--yellow);
+  margin-right: 99px;
+}
+
+.wraper main #quote {
+  font-size: 36px;
+  font-family: Raleway, sans-serif;
+  line-height: 43.2px;
+  font-style: normal;
+  font-weight: 500;
+
+  width: 614px;
+  max-height: 301px;
+}
+
+.wraper main .author {
+  margin-top: 159px;
+  margin-left: 416px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.wraper main .author #name {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 28.18px;
+  color: #4f4f4f;
+}
+
+.wraper main .author #business {
+  font-family: Raleway, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: #828282;
 }
