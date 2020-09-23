@@ -1,17 +1,18 @@
-:root {
-  --yellow: #f7df94;
-}
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.wraper {
+  font-family: Raleway, sans-serif;
+}
+
 .wraper header {
   margin-top: 31px;
   margin-right: 127px;
   display: flex;
+
   justify-content: flex-end;
 }
 
@@ -26,9 +27,9 @@
 }
 
 .wraper header h1 {
-  font-family: Raleway, sans-serif;
   font-weight: 500;
   font-size: 18px;
+
   line-height: 21.26px;
   margin-right: 11px;
   text-align: center;
@@ -42,50 +43,55 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 200px;
-  display: flex;
+
+  margin-top: 150px;
 }
 
 .wraper main #vertical-line {
   width: 8px;
   height: 301px;
-  border-left: thick solid var(--yellow);
+  border-left: thick solid #f7df94;
+
   margin-right: 99px;
 }
 
 .wraper main #quote {
   font-size: 36px;
-  font-family: Raleway, sans-serif;
   line-height: 43.2px;
   font-style: normal;
-  font-weight: 500;
 
+  font-weight: 500;
   width: 614px;
-  max-height: 301px;
+  max-height: 100%;
 }
 
 .wraper main .author {
-  margin-top: 159px;
+  margin-top: 100px;
   margin-left: 416px;
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
 }
 
+.wraper main .author:hover {
+  cursor: pointer;
+}
+
 .wraper main .author #name {
-  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-style: normal;
+
   font-size: 24px;
   line-height: 28.18px;
   color: #4f4f4f;
 }
 
-.wraper main .author #business {
-  font-family: Raleway, sans-serif;
+.wraper main .author #genre {
   font-weight: 500;
   font-style: normal;
+
   font-size: 14px;
   line-height: 16.44px;
   color: #828282;
