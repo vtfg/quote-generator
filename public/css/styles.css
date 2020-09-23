@@ -29,14 +29,19 @@
 .wraper header h1 {
   font-weight: 500;
   font-size: 18px;
-
   line-height: 21.26px;
+  
   margin-right: 11px;
   text-align: center;
 }
 
 .wraper main {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
 }
 
 .wraper main .content {
@@ -66,33 +71,71 @@
 }
 
 .wraper main .author {
-  margin-top: 100px;
-  margin-left: 416px;
+  margin-top: 49px;
   display: flex;
-
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-}
 
-.wraper main .author:hover {
-  cursor: pointer;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+  width: 672px;
+  height: 151px;
+  transition: 0.5s ease;
 }
 
 .wraper main .author #name {
   font-weight: 700;
   font-style: normal;
+  transition: 0.5s ease;
 
   font-size: 24px;
   line-height: 28.18px;
   color: #4f4f4f;
+
+  margin-left: 10px;
 }
 
 .wraper main .author #genre {
+  margin: 0;
   font-weight: 500;
   font-style: normal;
 
+  transition: 0.5s ease;
   font-size: 14px;
   line-height: 16.44px;
+
   color: #828282;
+  margin-left: 10px;
+}
+
+.wraper main .author span {
+  opacity: 0;
+  transition: 0.5s ease;
+  margin: 0;
+
+  position: absolute;
+  top: 50%;
+
+  left: 95%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.wraper main .author:hover {
+  background: #333;
+  cursor: pointer;
+}
+
+.wraper main .author:hover #name {
+  color: #f2f2f2;
+}
+
+.wraper main .author:hover #genre {
+  color: #828282;
+}
+
+.wraper main .author:hover span {
+  color: #f2f2f2;
+  opacity: 100;
 }

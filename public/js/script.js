@@ -1,6 +1,8 @@
 const randomButton = document.querySelector("#random");
+const authorButton = document.querySelector(".author");
 
 randomButton.addEventListener("click", async () => getRandom());
+authorButton.addEventListener("click", async () => getByAuthor());
 
 async function getRandom() {
   const url = "https://quote-garden.herokuapp.com/api/v2/quotes/random";
@@ -30,4 +32,10 @@ async function getRandom() {
     .catch(function (error) {
       console.error(error.message);
     });
+}
+
+async function getByAuthor() {
+  const author = document.querySelector("#name").textContent;
+  const authorName = author.replaceAll(" ", "%20");
+  const url = `https://quote-garden.herokuapp.com/api/v2/authors/${authorName}`;
 }
