@@ -30,7 +30,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21.26px;
-  
+
   margin-right: 11px;
   text-align: center;
 }
@@ -49,18 +49,18 @@
   align-items: center;
   justify-content: center;
 
-  margin-top: 150px;
+  margin-top: 80px;
 }
 
-.wraper main #vertical-line {
+#vertical-line {
   width: 8px;
   height: 301px;
   border-left: thick solid #f7df94;
 
-  margin-right: 99px;
+  margin-right: 50px;
 }
 
-.wraper main #quote {
+#quote {
   font-size: 36px;
   line-height: 43.2px;
   font-style: normal;
@@ -116,8 +116,8 @@
 
   position: absolute;
   top: 50%;
-
   left: 95%;
+
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
@@ -138,4 +138,14 @@
 .wraper main .author:hover span {
   color: #f2f2f2;
   opacity: 100;
+}
+
+.wraper main #byAuthor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 100px;
 }
