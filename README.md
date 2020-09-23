@@ -70,11 +70,11 @@ To clone and run this application, you'll need [Git](https://git-scm.com) instal
 # Clone this repository
 $ git clone https://github.com/vitogd/quote-generator
 
-# Install dependencies
-$ npm install
+# Goto index.html directory
+cd quote-generator/public/
 
-# Run the app
-$ npm start
+# Start with chrome
+start chrome index.html
 ```
 
 ## Acknowledgements
