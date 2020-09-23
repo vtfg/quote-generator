@@ -71,10 +71,10 @@ To clone and run this application, you'll need [Git](https://git-scm.com) instal
 $ git clone https://github.com/vitogd/quote-generator
 
 # Goto index.html directory
-cd quote-generator/public/
+$ cd quote-generator/public/
 
 # Start with chrome
-start chrome index.html
+$ start chrome index.html
 ```
 
 ## Acknowledgements
